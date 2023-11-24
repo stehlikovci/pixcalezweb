@@ -1,0 +1,63 @@
+@font-face {
+  font-family: PT;
+  src: url("./public/ptregular.woff2");
+}
+@font-face {
+  font-family: Rubik;
+  src: url("./public/rubik.woff2");
+}
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  background-color: #161616;
+}
+
+html {
+  font-family: Rubik, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  letter-spacing: 1px;
+  font-family: PT;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vw 0vw;
+  position: relative;
+  z-index: 1;
+  color: #EAEBF1;
+}
+header .logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding: 2em 0;
+}
+header .logo h1 {
+  margin: 0;
+  z-index: 3;
+  font-weight: normal;
+  font-size: 3rem;
+}
+header .logo img {
+  height: 3rem;
+  margin-right: 20px;
+  z-index: 3;
+}
+header .carousel {
+  padding: 2em 0;
+  width: 100%;
+}
+header .carousel img {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */

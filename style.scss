@@ -1,0 +1,78 @@
+$dark: #161616;
+$darker: #111111;
+$gray: #232323;
+$secondary: #8A95F2;
+$primary: #2738D1;
+$light: #EAEBF1;
+$red: #F64040;
+$progressbar: rgb(28, 114, 2);
+$scalecolor: #eb3443;
+$compresscolor: #06a11b;
+$formatcolor: #0168dd;
+
+@font-face {
+    font-family: PT;
+    src: url("./public/ptregular.woff2");
+}
+
+@font-face {
+    font-family: Rubik;
+    src: url("./public/rubik.woff2");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: $dark;
+}
+
+html {
+    font-family: Rubik, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    letter-spacing: 1px;
+    font-family: PT;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vw 0vw;
+    position: relative;
+    z-index: 1;
+    color: $light;
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        padding: 2em 0;
+        h1 {
+            margin: 0;
+            z-index: 3;
+            font-weight: normal;
+            font-size: 3rem;
+        }
+        img {
+            height: 3rem;
+            margin-right: 20px;
+            z-index: 3;
+        }
+    }
+    .carousel {
+        padding: 2em 0;
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+}
